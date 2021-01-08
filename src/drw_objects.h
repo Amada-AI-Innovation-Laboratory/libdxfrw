@@ -53,7 +53,7 @@ namespace DRW {
 *  Base class for tables entries
 *  @author Rallaz
 */
-class DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_TableEntry {
 public:
     //initializes default values
     DRW_TableEntry() {
@@ -121,7 +121,7 @@ protected:
 *  Class to handle dim style symbol table entries
 *  @author Rallaz
 */
-class DRW_Dimstyle : public DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_Dimstyle : public DRW_TableEntry {
     SETOBJFRIENDS
 public:
     DRW_Dimstyle() { reset();}
@@ -235,7 +235,7 @@ public:
 *  @author Rallaz
 */
 /*TODO: handle complex lineType*/
-class DRW_LType : public DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_LType : public DRW_TableEntry {
     SETOBJFRIENDS
 public:
     DRW_LType() { reset();}
@@ -271,7 +271,7 @@ private:
 *  Class to handle layer symbol table entries
 *  @author Rallaz
 */
-class DRW_Layer : public DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_Layer : public DRW_TableEntry {
     SETOBJFRIENDS
 public:
     DRW_Layer() { reset();}
@@ -307,7 +307,7 @@ public:
 *  Class to handle block record table entries
 *  @author Rallaz
 */
-class DRW_Block_Record : public DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_Block_Record : public DRW_TableEntry {
     SETOBJFRIENDS
 public:
     DRW_Block_Record() { reset();}
@@ -341,7 +341,7 @@ private:
 *  Class to handle text style symbol table entries
 *  @author Rallaz
 */
-class DRW_Textstyle : public DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_Textstyle : public DRW_TableEntry {
     SETOBJFRIENDS
 public:
     DRW_Textstyle() { reset();}
@@ -376,7 +376,7 @@ public:
 *  Class to handle vport symbol table entries
 *  @author Rallaz
 */
-class DRW_Vport : public DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_Vport : public DRW_TableEntry {
     SETOBJFRIENDS
 public:
     DRW_Vport() { reset();}
@@ -444,7 +444,7 @@ public:
 *  Class to handle image definitions object entries
 *  @author Rallaz
 */
-class DRW_ImageDef : public DRW_TableEntry {//
+class LIBDXFRW_DLL_EXPORTED DRW_ImageDef : public DRW_TableEntry {//
     SETOBJFRIENDS
 public:
     DRW_ImageDef() {
@@ -480,7 +480,7 @@ public:
 *  Class to handle AppId symbol table entries
 *  @author Rallaz
 */
-class DRW_AppId : public DRW_TableEntry {
+class LIBDXFRW_DLL_EXPORTED DRW_AppId : public DRW_TableEntry {
     SETOBJFRIENDS
 public:
     DRW_AppId() { reset();}

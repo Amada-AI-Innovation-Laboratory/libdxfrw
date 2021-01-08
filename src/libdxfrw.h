@@ -23,7 +23,7 @@
 class dxfReader;
 class dxfWriter;
 
-class dxfRW {
+class LIBDXFRW_DLL_EXPORTED dxfRW {
 public:
     dxfRW(const char* name);
     ~dxfRW();

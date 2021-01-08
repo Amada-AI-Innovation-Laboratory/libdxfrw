@@ -27,7 +27,7 @@ class dwgBuffer;
 *  TODO: verify the dxf read/write part
 *  @author Rallaz
 */
-class DRW_Class {
+class LIBDXFRW_DLL_EXPORTED DRW_Class {
 public:
     DRW_Class() {
     }

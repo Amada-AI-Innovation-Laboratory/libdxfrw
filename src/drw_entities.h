@@ -95,7 +95,7 @@ namespace DRW {
 *  Base class for entities
 *  @author Rallaz
 */
-class DRW_Entity {
+class LIBDXFRW_DLL_EXPORTED DRW_Entity {
     SETENTFRIENDS
 public:
     //initializes default values
@@ -223,7 +223,7 @@ private:
 *  Class to handle point entity
 *  @author Rallaz
 */
-class DRW_Point : public DRW_Entity {
+class LIBDXFRW_DLL_EXPORTED DRW_Point : public DRW_Entity {
     SETENTFRIENDS
 public:
     DRW_Point() {
@@ -252,7 +252,7 @@ public:
 *  Class to handle line entity
 *  @author Rallaz
 */
-class DRW_Line : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Line : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Line() {
@@ -275,7 +275,7 @@ public:
 *  Class to handle ray entity
 *  @author Rallaz
 */
-class DRW_Ray : public DRW_Line {
+class LIBDXFRW_DLL_EXPORTED DRW_Ray : public DRW_Line {
     SETENTFRIENDS
 public:
     DRW_Ray() {
@@ -290,7 +290,7 @@ protected:
 *  Class to handle xline entity
 *  @author Rallaz
 */
-class DRW_Xline : public DRW_Ray {
+class LIBDXFRW_DLL_EXPORTED DRW_Xline : public DRW_Ray {
 public:
     DRW_Xline() {
         eType = DRW::XLINE;
@@ -302,7 +302,7 @@ public:
 *  Class to handle circle entity
 *  @author Rallaz
 */
-class DRW_Circle : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Circle : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Circle() {
@@ -324,7 +324,7 @@ public:
 *  Class to handle arc entity
 *  @author Rallaz
 */
-class DRW_Arc : public DRW_Circle {
+class LIBDXFRW_DLL_EXPORTED DRW_Arc : public DRW_Circle {
     SETENTFRIENDS
 public:
     DRW_Arc() {
@@ -366,7 +366,7 @@ public:
 *  for hatch boundary are in degrees
 *  @author Rallaz
 */
-class DRW_Ellipse : public DRW_Line {
+class LIBDXFRW_DLL_EXPORTED DRW_Ellipse : public DRW_Line {
     SETENTFRIENDS
 public:
     DRW_Ellipse() {
@@ -398,7 +398,7 @@ public:
 *  Class to handle trace entity
 *  @author Rallaz
 */
-class DRW_Trace : public DRW_Line {
+class LIBDXFRW_DLL_EXPORTED DRW_Trace : public DRW_Line {
     SETENTFRIENDS
 public:
     DRW_Trace() {
@@ -423,7 +423,7 @@ public:
 *  Class to handle solid entity
 *  @author Rallaz
 */
-class DRW_Solid : public DRW_Trace {
+class LIBDXFRW_DLL_EXPORTED DRW_Solid : public DRW_Trace {
     SETENTFRIENDS
 public:
     DRW_Solid() {
@@ -459,7 +459,7 @@ public:
 *  Class to handle 3dface entity
 *  @author Rallaz
 */
-class DRW_3Dface : public DRW_Trace {
+class LIBDXFRW_DLL_EXPORTED DRW_3Dface : public DRW_Trace {
     SETENTFRIENDS
 public:
     enum InvisibleEdgeFlags {
@@ -505,7 +505,7 @@ public:
 *  Class to handle block entries
 *  @author Rallaz
 */
-class DRW_Block : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Block : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Block() {
@@ -535,7 +535,7 @@ private:
 *  Class to handle insert entries
 *  @author Rallaz
 */
-class DRW_Insert : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Insert : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Insert() {
@@ -576,7 +576,7 @@ public: //only for read dwg
 *  Class to handle lwpolyline entity
 *  @author Rallaz
 */
-class DRW_LWPolyline : public DRW_Entity {
+class LIBDXFRW_DLL_EXPORTED DRW_LWPolyline : public DRW_Entity {
     SETENTFRIENDS
 public:
     DRW_LWPolyline() {
@@ -646,7 +646,7 @@ public:
 *  Class to handle insert entries
 *  @author Rallaz
 */
-class DRW_Text : public DRW_Line {
+class LIBDXFRW_DLL_EXPORTED DRW_Text : public DRW_Line {
     SETENTFRIENDS
 public:
     //! Vertical alignments.
@@ -702,7 +702,7 @@ public:
 *  Class to handle insert entries
 *  @author Rallaz
 */
-class DRW_MText : public DRW_Text {
+class LIBDXFRW_DLL_EXPORTED DRW_MText : public DRW_Text {
     SETENTFRIENDS
 public:
     //! Attachments.
@@ -742,7 +742,7 @@ private:
 *  Class to handle vertex  for polyline entity
 *  @author Rallaz
 */
-class DRW_Vertex : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Vertex : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Vertex() {
@@ -786,7 +786,7 @@ public:
 *  Class to handle polyline entity
 *  @author Rallaz
 */
-class DRW_Polyline : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Polyline : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Polyline() {
@@ -844,7 +844,7 @@ private:
 *  Class to handle spline entity
 *  @author Rallaz
 */
-class DRW_Spline : public DRW_Entity {
+class LIBDXFRW_DLL_EXPORTED DRW_Spline : public DRW_Entity {
     SETENTFRIENDS
 public:
     DRW_Spline() {
@@ -903,7 +903,7 @@ private:
 *  Class to handle hatch loop
 *  @author Rallaz
 */
-class DRW_HatchLoop {
+class LIBDXFRW_DLL_EXPORTED DRW_HatchLoop {
 public:
     DRW_HatchLoop(int t) {
         type = t;
@@ -937,7 +937,7 @@ public:
 *  @author Rallaz
 */
 //TODO: handle lwpolylines, splines and ellipses
-class DRW_Hatch : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Hatch : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Hatch() {
@@ -1040,7 +1040,7 @@ private:
 *  Class to handle image entity
 *  @author Rallaz
 */
-class DRW_Image : public DRW_Line {
+class LIBDXFRW_DLL_EXPORTED DRW_Image : public DRW_Line {
     SETENTFRIENDS
 public:
     DRW_Image() {
@@ -1075,7 +1075,7 @@ public:
 *  Base class for dimension entity
 *  @author Rallaz
 */
-class DRW_Dimension : public DRW_Entity {
+class LIBDXFRW_DLL_EXPORTED DRW_Dimension : public DRW_Entity {
     SETENTFRIENDS
 public:
     DRW_Dimension() {
@@ -1201,7 +1201,7 @@ protected:
 *  Class to handle aligned dimension entity
 *  @author Rallaz
 */
-class DRW_DimAligned : public DRW_Dimension {
+class LIBDXFRW_DLL_EXPORTED DRW_DimAligned : public DRW_Dimension {
     SETENTFRIENDS
 public:
     DRW_DimAligned(){
@@ -1230,7 +1230,7 @@ protected:
 *  Class to handle linear or rotated dimension entity
 *  @author Rallaz
 */
-class DRW_DimLinear : public DRW_DimAligned {
+class LIBDXFRW_DLL_EXPORTED DRW_DimLinear : public DRW_DimAligned {
 public:
     DRW_DimLinear() {
         eType = DRW::DIMLINEAR;
@@ -1250,7 +1250,7 @@ public:
 *  Class to handle aligned, linear or rotated dimension entity
 *  @author Rallaz
 */
-class DRW_DimRadial : public DRW_Dimension {
+class LIBDXFRW_DLL_EXPORTED DRW_DimRadial : public DRW_Dimension {
     SETENTFRIENDS
 public:
     DRW_DimRadial() {
@@ -1276,7 +1276,7 @@ protected:
 *  Class to handle aligned, linear or rotated dimension entity
 *  @author Rallaz
 */
-class DRW_DimDiametric : public DRW_Dimension {
+class LIBDXFRW_DLL_EXPORTED DRW_DimDiametric : public DRW_Dimension {
     SETENTFRIENDS
 public:
     DRW_DimDiametric() {
@@ -1302,7 +1302,7 @@ protected:
 *  Class to handle angular dimension entity
 *  @author Rallaz
 */
-class DRW_DimAngular : public DRW_Dimension {
+class LIBDXFRW_DLL_EXPORTED DRW_DimAngular : public DRW_Dimension {
     SETENTFRIENDS
 public:
     DRW_DimAngular() {
@@ -1333,7 +1333,7 @@ protected:
 *  Class to handle angular 3p dimension entity
 *  @author Rallaz
 */
-class DRW_DimAngular3p : public DRW_Dimension {
+class LIBDXFRW_DLL_EXPORTED DRW_DimAngular3p : public DRW_Dimension {
     SETENTFRIENDS
 public:
     DRW_DimAngular3p() {
@@ -1361,7 +1361,7 @@ protected:
 *  Class to handle ordinate dimension entity
 *  @author Rallaz
 */
-class DRW_DimOrdinate : public DRW_Dimension {
+class LIBDXFRW_DLL_EXPORTED DRW_DimOrdinate : public DRW_Dimension {
     SETENTFRIENDS
 public:
     DRW_DimOrdinate() {
@@ -1388,7 +1388,7 @@ protected:
 *  Class to handle leader entity
 *  @author Rallaz
 */
-class DRW_Leader : public DRW_Entity {
+class LIBDXFRW_DLL_EXPORTED DRW_Leader : public DRW_Entity {
     SETENTFRIENDS
 public:
     DRW_Leader() {
@@ -1441,7 +1441,7 @@ private:
 *  Class to handle viewport entity
 *  @author Rallaz
 */
-class DRW_Viewport : public DRW_Point {
+class LIBDXFRW_DLL_EXPORTED DRW_Viewport : public DRW_Point {
     SETENTFRIENDS
 public:
     DRW_Viewport() {

@@ -31,7 +31,7 @@ class dwgBuffer;
 *  or use add* helper functions.
 *  @author Rallaz
 */
-class DRW_Header {
+class LIBDXFRW_DLL_EXPORTED DRW_Header {
     SETHDRFRIENDS
 public:
     DRW_Header();

@@ -26,7 +26,7 @@
  *
  * @author Rallaz
  */
-class DRW_Interface {
+class LIBDXFRW_DLL_EXPORTED DRW_Interface {
 public:
     DRW_Interface() {
     }

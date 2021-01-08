@@ -22,7 +22,7 @@
 
 class dwgReader;
 
-class dwgR {
+class LIBDXFRW_DLL_EXPORTED dwgR {
 public:
     dwgR(const char* name);
     ~dwgR();
